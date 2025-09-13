@@ -35,8 +35,9 @@ header {
   padding: 4rem 2rem;
 }
 .hero .profile-img {
-  width: 150px;
-  border-radius: 50%;
+  width: 300px;
+  height: 100;
+  border-radius: 5%;
   margin-bottom: 1rem;
 }
 .hero h1 {

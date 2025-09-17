@@ -53,14 +53,14 @@ header {
 }
 .btn {
   display: inline-block;
-  padding: 0.7rem 1.5rem;
-  background: #ff4c60;
+  padding: 0.7rem 1rem;
+  background: #4643e8fd;
   color: #fff;
   border-radius: 5px;
   transition: background 0.3s;
 }
 .btn:hover {
-  background: #e84356;
+  background: #43e885fd;
 }
 
 /* Content Sections */

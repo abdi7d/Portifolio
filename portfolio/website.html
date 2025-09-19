@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdi Dabala | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <!-- <header>
+      <nav class="navbar">
+        <div class="logo">Abdi<span>.</span></div>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="theme-toggle">
+          <button id="themeBtn"><i class="fas fa-moon"></i></button>
+        </div>
+      </nav>
+    </header> -->
+
+    <header>
+      <nav class="navbar">
+        <div class="logo">Abdi<span>.</span></div>
+        <ul class="nav-links">
+          <li>
+            <a href="#home" class="active"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="#about"><i class="fas fa-user"></i> About</a>
+          </li>
+          <li>
+            <a href="#projects"><i class="fas fa-folder-open"></i> Projects</a>
+          </li>
+          <li>
+            <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+          </li>
+        </ul>
+
+        <div class="theme-toggle">
+          <button id="themeBtn"><i class="fas fa-moon"></i></button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Sections -->
+    <section id="home" class="section hero">
+      <img
+        src="images/img20250915_08270565.jpg"
+        alt="Profile Picture"
+        class="profile-img"
+      />
+      <div class="hero-text">
+        <h1>Hi, I'm <span>Abdi Dabala</span></h1>
+        <p>I am a <span class="typing"></span></p>
+        <a href="assets/resume.pdf" class="btn" download>Download Resume</a>
+      </div>
+      <!-- Scroll Down Button -->
+      <a href="#about" class="scroll-btn scroll-down-btn"
+        ><i class="fas fa-arrow-down"></i
+      ></a>
+    </section>
+
+    <section id="about" class="section about-section">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm <strong>Abdi Dabala</strong>, a software engineer passionate
+        about building modern web apps, exploring AI, and creating efficient
+        systems. I love working with Python, AI, LLMs, and web technologies. My
+        goal is to innovate and contribute to impactful open-source projects.
+      </p>
+    </section>
+
+    <section id="projects" class="section projects-section">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <img src="images/RAG chatbot image.jpg" alt="RAG Chatbot" />
+          <h3>RAG Chatbot Project</h3>
+          <p>
+            A RAG-based chatbot to explore publications using AI and LLM
+            technologies.
+          </p>
+          <a
+            href="https://github.com/abdi7d/Ready-Tensor-Publication-Explorer-RAG-Chatbot"
+            target="_blank"
+            >View Project</a
+          >
+        </div>
+        <div class="project-card">
+          <img src="assets/images/project1.png" alt="Café Management System" />
+          <h3>Café Management System</h3>
+          <p>
+            A Python project with database integration for managing orders,
+            stock, and sales.
+          </p>
+          <a
+            href="https://github.com/abdi7d/Cafe-Management-System"
+            target="_blank"
+            >View Project</a
+          >
+        </div>
+        <div class="project-card">
+          <img src="assets/images/project1.png" alt="EduConnect Portal" />
+          <h3>EduConnect Portal</h3>
+          <p>
+            A web-based communication portal connecting students, families, and
+            schools.
+          </p>
+          <a href="https://github.com/abdi7d/EduConnect-Portal" target="_blank"
+            >View Project</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <h2>Contact Me</h2>
+      <form id="contactForm" class="contact-form">
+        <input type="text" name="from_name" placeholder="Your Name" required />
+        <input
+          type="email"
+          name="from_email"
+          placeholder="Your Email"
+          required
+        />
+        <textarea
+          name="message"
+          rows="5"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <p><i class="fas fa-map-marker-alt"></i> ASTU Adama Oromia, Ethiopia</p>
+        <p><i class="fas fa-envelope"></i> abdid.yadata@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +251 912 886 991</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Abdi Dabala. All rights reserved.</p>
+      <div class="social-links">
+        <!-- <a href="https://github.com/abdi7d" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a> -->
+        <a href="https://linkedin.com/in/abdi7d" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a
+          href="https://facebook.com/profile.php?id=61573799533133"
+          target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="https://twitter.com/abdi7d" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://instagram.com/abdi777abdi" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <!-- <a href="https://leetcode.com/abdi7d" target="_blank"
+          ><i class="fas fa-code"></i
+        ></a> -->
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

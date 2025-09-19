@@ -1,0 +1,160 @@
+:root {
+  --bg-color: #f5f5f5;
+  --text-color: #111111;
+  --primary-color: #4c7fff;
+  --secondary-color: #ffffff;
+}
+body.dark {
+  --bg-color: #111111;
+  --text-color: #ffffff;
+  --primary-color: #1e90ff;
+  --secondary-color: #1a1a1a;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: row;
+}
+
+/* --- Sidebar --- */
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  position: fixed;
+  background: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.profile-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.sidebar-profile-img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+.sidebar .logo { font-size: 1.5rem; font-weight: bold; color: var(--text-color); }
+
+.sidebar-nav a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 0.5rem;
+  color: var(--text-color);
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  transition: background 0.3s, color 0.3s;
+}
+.sidebar-nav a.active, .sidebar-nav a:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+/* --- Main Content --- */
+.main-content {
+  margin-left: 220px;
+  width: calc(100% - 220px);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sections */
+.section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+.hero .hero-text { max-width: 600px; }
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.2rem;
+  background: var(--primary-color);
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn:hover { background: #e85f43; }
+
+/* Scroll Down Button */
+.scroll-down-btn {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background: var(--primary-color);
+  padding: 0.7rem;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.scroll-down-btn:hover { background: #e85f43; transform: translateY(5px); }
+
+/* Typing effect */
+.typing {
+  font-weight: bold;
+  color: var(--primary-color);
+  border-right: 2px solid var(--primary-color);
+  padding-right: 3px;
+  white-space: nowrap;
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0%,50%,100% { border-color: var(--primary-color); }
+  25%,75% { border-color: transparent; }
+}
+
+/* Projects */
+.projects { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; }
+.project-card { background: var(--secondary-color); padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); max-width: 300px; transition: 0.3s; }
+.project-card img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem; }
+.project-card h3 { color: var(--primary-color); margin-bottom: 0.5rem; }
+.project-card a { color: #ff4c60; text-decoration: none; font-weight: bold; }
+.project-card:hover { transform: translateY(-5px); }
+
+/* Contact Form */
+.contact-form { display: flex; flex-direction: column; gap: 1rem; max-width: 500px; margin: 0 auto; }
+.contact-form input, .contact-form textarea { padding: 0.7rem; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem; }
+.contact-form button { align-self: flex-start; }
+
+/* Footer */
+/* footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--primary-color);
+  color: #fff;
+  width: 100%;
+}
+footer .social-links { margin-top: 0.5rem; display: flex; justify-content: center; gap: 1rem; }
+footer .social-links a { color: #fff; font-size: 1.5rem; transition: 0.3s; }
+footer .social-links a:hover { color: #e85f43; } */
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: linear-gradient(90deg, #4643e8, #e85f43); /* Gradient effect */
+  color: #ffffff;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .sidebar { width: 60px; }
+  .main-content { margin-left: 60px; width: calc(100% - 60px); }
+  .sidebar-nav a { font-size: 0; }
+  .profile-top .logo { display: none; }
+}

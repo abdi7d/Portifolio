@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdi Dabala | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="profile-top">
+      <img src="images/img20250915_08270565.jpg" alt="Profile" class="sidebar-profile-img" />
+      <div class="logo">Abdi<span>.</span></div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a href="#home" class="active"><i class="fas fa-home"></i> Home</a>
+      <a href="#about"><i class="fas fa-user"></i> About</a>
+      <a href="#projects"><i class="fas fa-folder-open"></i> Projects</a>
+      <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+
+    <div class="theme-toggle">
+      <button id="themeBtn"><i class="fas fa-moon"></i></button>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Home Section -->
+    <section id="home" class="section hero">
+      <div class="hero-text">
+        <h1>Hi, I'm <span>Abdi Dabala</span></h1>
+        <p>I am a <span class="typing"></span></p>
+        <a href="assets/resume.pdf" class="btn" download>Download Resume</a>
+        <a href="#about" class="scroll-btn scroll-down-btn"><i class="fas fa-arrow-down"></i></a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <h2>About Me</h2>
+      <p>Hello! I'm <strong>Abdi Dabala</strong>, a software engineer passionate about building modern web apps, exploring AI, and creating efficient systems. I love Python, AI, LLMs, and web technologies.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <img src="images/RAG chatbot image.jpg" alt="RAG Chatbot" />
+          <h3>RAG Chatbot Project</h3>
+          <p>A RAG-based chatbot to explore publications using AI and LLM technologies.</p>
+          <a href="https://github.com/abdi7d/Ready-Tensor-Publication-Explorer-RAG-Chatbot" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+          <img src="images/project1.png" alt="Café Management System" />
+          <h3>Café Management System</h3>
+          <p>Python project with database integration for managing orders, stock, and sales.</p>
+          <a href="https://github.com/abdi7d/Cafe-Management-System" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+          <img src="images/project1.png" alt="EduConnect Portal" />
+          <h3>EduConnect Portal</h3>
+          <p>Web-based portal connecting students, families, and schools.</p>
+          <a href="https://github.com/abdi7d/EduConnect-Portal" target="_blank">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <h2>Contact Me</h2>
+      <form id="contactForm" class="contact-form">
+        <input type="text" name="from_name" placeholder="Your Name" required />
+        <input type="email" name="from_email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> abdid.yadata@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +251 912 886 991</p>
+        <p><i class="fas fa-map-marker-alt"></i> ASTU Adama, Oromia, Ethiopia</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Abdi Dabala. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://github.com/abdi7d" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/abdi7d" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://facebook.com/profile.php?id=61573799533133" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com/abdi7d" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com/abdi777abdi" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://leetcode.com/abdi7d" target="_blank"><i class="fas fa-code"></i></a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="script.js"></script>
+</body>
+</html>
